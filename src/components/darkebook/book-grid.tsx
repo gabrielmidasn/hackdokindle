@@ -9,11 +9,7 @@ const bookCovers = [
 
 export default function BookGrid() {
   return (
-    <section className="pt-4 pb-8 bg-charcoal-black relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-no-repeat bg-center opacity-5"
-        style={{backgroundImage: "url('https://i.imgur.com/b0FqFsO.png')", backgroundSize: '60%'}}
-      ></div>
+    <section className="pt-4 pb-4 bg-transparent relative overflow-hidden">
       <div className="container mx-auto px-4 text-center relative z-10">
         <h1 className="text-5xl md:text-7xl font-headline text-dark-red mb-2 uppercase">
           Hack do Kindle

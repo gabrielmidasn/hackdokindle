@@ -17,11 +17,7 @@ const features = [
 
 export default function WhyDarkebook() {
     return (
-      <section className="py-8 bg-charcoal-black relative overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-no-repeat bg-center opacity-5"
-          style={{backgroundImage: "url('https://i.imgur.com/b0FqFsO.png')", backgroundSize: '50%'}}
-        ></div>
+      <section className="py-4 bg-transparent relative overflow-hidden">
         <div className="container mx-auto px-4 text-center max-w-4xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-headline text-gold mb-4">
             Por que pagar mais no Kindle se na Darkebook é diferente?

@@ -12,20 +12,25 @@ import DynamicSocialProof from "@/components/darkebook/dynamic-social-proof";
 
 export default function DarkebookPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-charcoal-black text-light-gray">
-      <UrgencyBanner />
-      <main className="flex-1">
-        <BookGrid />
-        <PainSection />
-        <Comparison />
-        <WhyDarkebook />
-        <SocialProof />
-        <Offers />
-        <Guarantee />
-        <Faq />
-      </main>
-      <Footer />
-      <DynamicSocialProof />
+    <div 
+      className="flex flex-col min-h-screen bg-charcoal-black text-light-gray bg-no-repeat bg-center"
+      style={{backgroundImage: "url('https://i.imgur.com/b0FqFsO.png')", backgroundSize: '60%', backgroundAttachment: 'fixed'}}
+    >
+      <div className="bg-charcoal-black/90">
+        <UrgencyBanner />
+        <main className="flex-1">
+          <BookGrid />
+          <PainSection />
+          <Comparison />
+          <WhyDarkebook />
+          <SocialProof />
+          <Offers />
+          <Guarantee />
+          <Faq />
+        </main>
+        <Footer />
+        <DynamicSocialProof />
+      </div>
     </div>
   );
 }
