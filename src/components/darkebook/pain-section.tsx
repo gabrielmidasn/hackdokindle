@@ -1,6 +1,6 @@
 export default function PainSection() {
     return (
-      <section id="dor" className="py-16 bg-card">
+      <section id="dor" className="py-16 bg-charcoal-black">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-headline text-gold mb-6">
             Cansado de pagar caro para ler seus Dark Romances favoritos?
