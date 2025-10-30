@@ -30,7 +30,7 @@ export default function WhyDarkebook() {
               <div key={index} className="flex items-start gap-4 p-4 bg-card/50 rounded-lg border border-gray-800">
                 <CheckCircle className="w-8 h-8 text-gold mt-1 shrink-0" />
                 <div>
-                  <h3 className="text-xl font-bold text-light-gray">{feature.title}</h3>
+                  <h3 className="text-xl font-bold">{feature.title}</h3>
                   <p className="text-gray-300">{feature.description}</p>
                 </div>
               </div>
