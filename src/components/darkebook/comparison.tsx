@@ -18,7 +18,7 @@ export default function Comparison() {
         <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
           A mesma leitura, a mesma intensidade, mas por um preço que cabe no seu bolso.
         </p>
-        <Button asChild size="lg" className="bg-gold text-charcoal-black font-bold text-lg hover:bg-gold/90 transform hover:scale-105 transition-transform duration-300">
+        <Button asChild size="lg" className="bg-gold text-charcoal-black font-bold text-lg hover:bg-gold/90 transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto">
           <a href="#ofertas">
             Quero economizar agora
             <ArrowRight className="ml-2 h-5 w-5" />
