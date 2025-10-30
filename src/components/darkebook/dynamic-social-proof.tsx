@@ -32,7 +32,7 @@ export default function DynamicSocialProof() {
         const interval = setInterval(() => {
             // Wait for fade out animation to complete before showing next one
             setTimeout(showNotification, 500);
-        }, 12000 + Math.random() * 5000); // 12-17 seconds interval
+        }, 12000); // 12 seconds interval
 
         // Initial notification
         const initialTimeout = setTimeout(showNotification, 5000);
