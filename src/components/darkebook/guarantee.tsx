@@ -3,8 +3,12 @@ import { ShieldCheck, MessageCircle } from "lucide-react";
 
 export default function Guarantee() {
   return (
-    <section className="py-12 bg-card">
-      <div className="container mx-auto px-4 text-center max-w-2xl">
+    <section className="py-8 bg-card relative overflow-hidden">
+      <div 
+        className="absolute inset-0 bg-no-repeat bg-center opacity-5"
+        style={{backgroundImage: "url('https://i.imgur.com/b0FqFsO.png')", backgroundSize: '50%'}}
+      ></div>
+      <div className="container mx-auto px-4 text-center max-w-2xl relative z-10">
         <ShieldCheck className="mx-auto text-gold mb-4" size={64} />
         <h2 className="text-3xl md:text-4xl font-headline text-gold mb-4">
           Sua compra 100% protegida
