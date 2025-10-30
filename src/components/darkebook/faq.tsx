@@ -35,7 +35,7 @@ import {
   
   export default function Faq() {
     return (
-      <section id="faq" className="py-16 bg-charcoal-black">
+      <section id="faq" className="py-12 bg-charcoal-black">
         <div className="container mx-auto px-4 max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-headline text-center text-gold mb-8">
             Perguntas Frequentes

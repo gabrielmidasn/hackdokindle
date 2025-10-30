@@ -2,7 +2,7 @@ import { ArrowDown } from "lucide-react";
 
 export default function PainSection() {
     return (
-      <section id="dor" className="py-16 bg-charcoal-black">
+      <section id="dor" className="py-12 bg-charcoal-black">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="text-3xl md:text-4xl font-headline text-light-gray mb-6">
             Cansada de pagar caro para ler seus Dark Romances favoritos?

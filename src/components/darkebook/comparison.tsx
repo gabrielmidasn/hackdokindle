@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Comparison() {
   return (
-    <section id="comparacao" className="py-16 bg-charcoal-black">
+    <section id="comparacao" className="py-12 bg-charcoal-black">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <h2 className="text-3xl md:text-4xl font-headline uppercase tracking-wider text-gold mb-8">
           KINDLE X DARKEBOOK

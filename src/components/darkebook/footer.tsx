@@ -4,7 +4,7 @@ import { MessageCircle, Mail, Instagram, Facebook, Twitter } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-gray-800 py-8">
+    <footer className="bg-card border-t border-gray-800 py-6">
       <div className="container mx-auto px-4 text-center text-gray-400">
         <Image src="https://i.imgur.com/b0FqFsO.png" alt="Darkebook Logo" width={150} height={40} className="mx-auto mb-4" />
         <p className="text-gold text-lg mb-4">Sua biblioteca dark premium em um só clique.</p>

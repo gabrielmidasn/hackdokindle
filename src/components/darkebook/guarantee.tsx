@@ -3,7 +3,7 @@ import { ShieldCheck, MessageCircle } from "lucide-react";
 
 export default function Guarantee() {
   return (
-    <section className="py-16 bg-card">
+    <section className="py-12 bg-card">
       <div className="container mx-auto px-4 text-center max-w-2xl">
         <ShieldCheck className="mx-auto text-gold mb-4" size={64} />
         <h2 className="text-3xl md:text-4xl font-headline text-gold mb-4">

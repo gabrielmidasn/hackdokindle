@@ -18,7 +18,7 @@ const socialProofImages = [
 
 export default function SocialProof() {
   return (
-    <section className="py-16 bg-charcoal-black">
+    <section className="py-12 bg-charcoal-black">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-headline text-gold mb-8">
           O que nossos leitores dizem
