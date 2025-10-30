@@ -19,7 +19,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
             </li>
           ))}
         </ul>
-        <Button onClick={() => !isFeatured && onEssentialClick()} size="lg" className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold text-lg`}>
+        <Button onClick={() => !isFeatured && onEssentialClick()} size="lg" className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold`}>
           {offer.cta}
         </Button>
       </div>
@@ -73,7 +73,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto items-center">
                 <OfferCard offer={offers[0]} isFeatured={false} onEssentialClick={handleEssentialClick} />
-                <OfferCard offer={offers[1]} isFeatured={true} />
+                <OfferCard offer={offers[1]} isFeatured={true} onEssentialClick={() => {}} />
             </div>
             </div>
             {isPopupOpen && <UpsellPopup onClose={() => setPopupOpen(false)} />}
