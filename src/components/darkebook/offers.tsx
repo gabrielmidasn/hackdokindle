@@ -7,7 +7,7 @@ import UpsellPopup from './upsell-popup';
 
 const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
     return (
-      <div className={`border-2 ${isFeatured ? 'border-gold' : 'border-gray-700'} bg-card rounded-lg p-6 text-center transform transition-transform duration-300 ${isFeatured ? 'scale-105 shadow-2xl' : 'opacity-70'}`}>
+      <div className={`relative border-2 ${isFeatured ? 'border-gold' : 'border-gray-700'} bg-card rounded-lg p-6 text-center transform transition-transform duration-300 ${isFeatured ? 'scale-105 shadow-2xl' : 'hover:scale-105'}`}>
         {isFeatured && <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-charcoal-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1"><Star size={16} />MAIS VENDIDO</div>}
         <h3 className="text-2xl font-headline text-gold mb-2">{offer.title}</h3>
         <p className="text-4xl font-bold mb-4">{offer.price}</p>
@@ -71,7 +71,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
             <h2 className="text-3xl md:text-4xl font-headline text-center text-gold mb-12">
                 Escolha seu acesso ao universo Dark Romance
             </h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
                 <OfferCard offer={offers[0]} isFeatured={false} onEssentialClick={handleEssentialClick} />
                 <OfferCard offer={offers[1]} isFeatured={true} />
             </div>
@@ -80,4 +80,3 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
       </section>
     );
   }
-  
