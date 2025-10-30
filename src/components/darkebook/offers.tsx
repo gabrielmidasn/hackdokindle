@@ -6,9 +6,39 @@ import { Check, X, Star } from "lucide-react";
 import UpsellPopup from './upsell-popup';
 
 const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
+    const buttonContent = (
+        <Button 
+            onClick={() => !isFeatured && onEssentialClick()} 
+            size="lg" 
+            className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold transform hover:scale-105 transition-transform duration-300`}
+        >
+          {offer.cta}
+        </Button>
+    );
+
+    if (isFeatured) {
+        return (
+            <div className={`relative border-2 border-gold shadow-gold/30 bg-card rounded-xl p-6 text-center transform transition-transform duration-300 scale-105 shadow-2xl`}>
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-charcoal-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1"><Star size={16} />MAIS VENDIDO</div>
+                <h3 className="text-2xl font-headline text-gold mb-2 mt-5">{offer.title}</h3>
+                <p className="text-4xl font-bold mb-4">{offer.price}</p>
+                <ul className="text-left space-y-3 mb-8 text-light-gray">
+                {offer.features.map((feature: any, index: number) => (
+                    <li key={index} className="flex items-start">
+                    {feature.included ? <Check className="w-5 h-5 text-green-500 mr-3 shrink-0 mt-1" /> : <X className="w-5 h-5 text-red-500 mr-3 shrink-0 mt-1" />}
+                    <span>{feature.text}</span>
+                    </li>
+                ))}
+                </ul>
+                <a href="https://www.ggcheckout.com/checkout/v2/LLzLS6aVZ8sqN9rWaOQj" target="_blank" rel="noopener noreferrer">
+                    {buttonContent}
+                </a>
+            </div>
+        )
+    }
+
     return (
-      <div className={`relative border-2 ${isFeatured ? 'border-gold shadow-gold/30' : 'border-gray-700'} bg-card rounded-xl p-6 text-center transform transition-transform duration-300 ${isFeatured ? 'scale-105 shadow-2xl' : 'hover:scale-105'}`}>
-        {isFeatured && <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-charcoal-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1"><Star size={16} />MAIS VENDIDO</div>}
+      <div className={`relative border-2 border-gray-700 bg-card rounded-xl p-6 text-center transform transition-transform duration-300 hover:scale-105`}>
         <h3 className="text-2xl font-headline text-gold mb-2 mt-5">{offer.title}</h3>
         <p className="text-4xl font-bold mb-4">{offer.price}</p>
         <ul className="text-left space-y-3 mb-8 text-light-gray">
@@ -19,9 +49,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
             </li>
           ))}
         </ul>
-        <Button onClick={() => !isFeatured && onEssentialClick()} size="lg" className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold transform hover:scale-105 transition-transform duration-300`}>
-          {offer.cta}
-        </Button>
+        {buttonContent}
       </div>
     );
   };
