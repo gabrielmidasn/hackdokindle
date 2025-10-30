@@ -46,26 +46,26 @@ const CountdownTimer = () => {
   const formatTime = (time: number) => time.toString().padStart(2, "0");
 
   return (
-    <div className="flex items-center gap-1 sm:gap-2">
+    <div className="flex items-center gap-1">
       <div className="flex flex-col items-center">
-        <div className="text-base sm:text-lg font-bold bg-black/20 rounded-md p-1 border border-gold">
+        <div className="text-sm font-bold bg-black/20 rounded-md p-0.5 px-1 border border-gold">
           {formatTime(timeLeft.hours)}
         </div>
-        <span className="text-xs">Horas</span>
+        <span className="text-xs scale-90">Horas</span>
       </div>
-      <div className="text-base sm:text-lg font-bold">:</div>
+      <div className="text-sm font-bold">:</div>
       <div className="flex flex-col items-center">
-        <div className="text-base sm:text-lg font-bold bg-black/20 rounded-md p-1 border border-gold">
+        <div className="text-sm font-bold bg-black/20 rounded-md p-0.5 px-1 border border-gold">
           {formatTime(timeLeft.minutes)}
         </div>
-        <span className="text-xs">Min</span>
+        <span className="text-xs scale-90">Min</span>
       </div>
-      <div className="text-base sm:text-lg font-bold">:</div>
+      <div className="text-sm font-bold">:</div>
       <div className="flex flex-col items-center">
-        <div className="text-base sm:text-lg font-bold bg-black/20 rounded-md p-1 border border-gold">
+        <div className="text-sm font-bold bg-black/20 rounded-md p-0.5 px-1 border border-gold">
           {formatTime(timeLeft.seconds)}
         </div>
-        <span className="text-xs">Seg</span>
+        <span className="text-xs scale-90">Seg</span>
       </div>
     </div>
   );
@@ -73,10 +73,10 @@ const CountdownTimer = () => {
 
 export default function UrgencyBanner() {
   return (
-    <div className="bg-dark-red text-white py-2 shadow-lg w-full">
-      <div className="container mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center">
-        <Hourglass className="w-5 h-5 sm:w-6 sm:h-6 text-gold" />
-        <p className="font-bold text-xs sm:text-base">
+    <div className="bg-dark-red text-white py-1 shadow-lg w-full">
+      <div className="container mx-auto px-4 flex flex-row items-center justify-center gap-2 text-center">
+        <Hourglass className="w-4 h-4 text-gold" />
+        <p className="font-bold text-xs">
           OFERTA EXPIRA EM:
         </p>
         <CountdownTimer />
