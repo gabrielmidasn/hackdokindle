@@ -1,6 +1,6 @@
 export default function WhyDarkebook() {
     return (
-      <section className="py-16 bg-card">
+      <section className="py-16 bg-charcoal-black">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-headline text-gold mb-4">
             Por que pagar mais no Kindle se na Darkebook é diferente?
@@ -15,7 +15,7 @@ export default function WhyDarkebook() {
             <p>
               <span className="font-bold">Aqui o eBook é realmente seu:</span> você pode ler quando quiser, enviar para quem quiser e até revender se quiser. Sem bloqueios, sem assinaturas mensais.
             </p>
-            <div className="bg-charcoal-black border border-gold rounded-lg p-6 my-8">
+            <div className="bg-card border border-gold rounded-lg p-6 my-8">
               <p className="text-2xl line-through text-gray-500">
                 No Kindle você gastaria: R$ 400+
               </p>
