@@ -51,8 +51,10 @@ export default function UpsellPopup({ onClose }: { onClose: () => void }) {
         <CountdownTimer />
         <p className="text-xs text-gray-400 mt-1 mb-4">Esta oferta expira em breve!</p>
 
-        <Button size="lg" className="w-full bg-gold text-charcoal-black font-bold text-base hover:bg-gold/90 transform hover:scale-105 transition-transform duration-300">
-            Quero aproveitar agora!
+        <Button asChild size="lg" className="w-full bg-gold text-charcoal-black font-bold text-base hover:bg-gold/90 transform hover:scale-105 transition-transform duration-300">
+            <a href="https://www.ggcheckout.com/checkout/v2/PDr50F0VzVEX3spm2HeW">
+                Quero aproveitar agora!
+            </a>
         </Button>
       </div>
     </div>
