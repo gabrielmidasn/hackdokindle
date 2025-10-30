@@ -1,10 +1,23 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { Poppins, Anton } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-poppins',
+});
+
+const anton = Anton({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--font-anton',
+});
 
 export const metadata: Metadata = {
-  title: 'Site Renew',
-  description: 'Breathe new life into your website with AI',
+  title: 'Darkebook',
+  description: 'Os Dark Romances mais procurados, vendidos e até censurados, todos em um só lugar.',
 };
 
 export default function RootLayout({
@@ -13,13 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
-      </head>
-      <body className="font-body antialiased">
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${poppins.variable} ${anton.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>

@@ -1,21 +1,33 @@
-import Features from "@/components/landing/features";
-import FinalCTA from "@/components/landing/final-cta";
-import Footer from "@/components/landing/footer";
-import Header from "@/components/landing/header";
-import Hero from "@/components/landing/hero";
-import StyleShowcase from "@/components/landing/style-showcase";
+import UrgencyBanner from "@/components/darkebook/urgency-banner";
+import Hero from "@/components/darkebook/hero";
+import BookGrid from "@/components/darkebook/book-grid";
+import PainSection from "@/components/darkebook/pain-section";
+import Comparison from "@/components/darkebook/comparison";
+import WhyDarkebook from "@/components/darkebook/why-darkebook";
+import SocialProof from "@/components/darkebook/social-proof";
+import Offers from "@/components/darkebook/offers";
+import Guarantee from "@/components/darkebook/guarantee";
+import Faq from "@/components/darkebook/faq";
+import Footer from "@/components/darkebook/footer";
+import DynamicSocialProof from "@/components/darkebook/dynamic-social-proof";
 
-export default function Home() {
+export default function DarkebookPage() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-background">
-      <Header />
+    <div className="flex flex-col min-h-screen bg-charcoal-black text-light-gray">
+      <UrgencyBanner />
       <main className="flex-1">
         <Hero />
-        <Features />
-        <StyleShowcase />
-        <FinalCTA />
+        <BookGrid />
+        <PainSection />
+        <Comparison />
+        <WhyDarkebook />
+        <SocialProof />
+        <Offers />
+        <Guarantee />
+        <Faq />
       </main>
       <Footer />
+      <DynamicSocialProof />
     </div>
   );
 }
