@@ -12,6 +12,8 @@ import {
 const socialProofImages = [
   "https://imgur.com/XaBXxJA.png",
   "https://imgur.com/H0bnL73.png",
+  "https://imgur.com/JaPu4Fy.png",
+  "https://imgur.com/xofMavX.png",
 ];
 
 export default function SocialProof() {
