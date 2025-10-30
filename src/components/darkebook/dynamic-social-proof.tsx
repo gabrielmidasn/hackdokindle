@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react';
 import { CheckCircle } from 'lucide-react';
 
 const notifications = [
-  "Juliana acabou de adquirir a Coleção Completa Darkebook",
-  "Rafael garantiu a Coleção Completa Darkebook",
-  "Camila entrou para a Coleção Completa Darkebook agora mesmo",
-  "Lucas aproveitou a Coleção Completa Darkebook",
-  "Ana garantiu acesso vitalício à Coleção Completa Darkebook"
+  "Mariana adquiriu a Coleção Completa",
+  "Beatriz adquiriu a Coleção Completa",
+  "Laura adquiriu a Coleção Completa",
+  "Júlia adquiriu a Coleção Completa",
+  "Isabela adquiriu a Coleção Completa",
+  "Ana adquiriu a Coleção Completa",
+  "Camila adquiriu a Coleção Completa",
 ];
 
 export default function DynamicSocialProof() {
