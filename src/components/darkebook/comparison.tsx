@@ -6,7 +6,7 @@ export default function Comparison() {
     <section id="comparacao" className="py-16 bg-charcoal-black">
       <div className="container mx-auto px-4 flex flex-col items-center text-center">
         <h2 className="text-3xl md:text-4xl font-headline uppercase tracking-wider text-gold mb-8">
-          Kindle vs. Darkebook
+          KINDLE X DARKEBOOK
         </h2>
         <div className="relative w-full max-w-2xl mb-8">
           <Image src="https://imgur.com/ESwQPel.png" alt="Comparação Kindle vs Darkebook" width={800} height={450} className="rounded-lg shadow-2xl" />
