@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-image",
+      "description": "Abstract representation of a website being renewed",
+      "imageUrl": "https://images.unsplash.com/photo-1743138712084-d87c268d7d40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHdlYnNpdGV8ZW58MHx8fHwxNzYxNzg3MzM5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract website"
+    },
+    {
+      "id": "showcase-1",
+      "description": "Mockup of a website",
+      "imageUrl": "https://images.unsplash.com/photo-1642132652859-3ef5a1048fd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWJzaXRlJTIwbW9ja3VwfGVufDB8fHx8MTc2MTc2MTEzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "website mockup"
+    }
+  ]
 }
