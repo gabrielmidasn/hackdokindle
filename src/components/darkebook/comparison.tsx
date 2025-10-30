@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function Comparison() {
   return (
@@ -18,7 +19,10 @@ export default function Comparison() {
           A mesma leitura, a mesma intensidade, mas por um preço que cabe no seu bolso.
         </p>
         <Button asChild size="lg" className="bg-gold text-charcoal-black font-bold text-lg hover:bg-gold/90 transform hover:scale-105 transition-transform duration-300">
-          <a href="#ofertas">Quero economizar agora</a>
+          <a href="#ofertas">
+            Quero economizar agora
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
         </Button>
       </div>
     </section>
