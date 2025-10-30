@@ -1,5 +1,4 @@
 import UrgencyBanner from "@/components/darkebook/urgency-banner";
-import Hero from "@/components/darkebook/hero";
 import BookGrid from "@/components/darkebook/book-grid";
 import PainSection from "@/components/darkebook/pain-section";
 import Comparison from "@/components/darkebook/comparison";
@@ -16,7 +15,6 @@ export default function DarkebookPage() {
     <div className="flex flex-col min-h-screen bg-charcoal-black text-light-gray">
       <UrgencyBanner />
       <main className="flex-1">
-        <Hero />
         <BookGrid />
         <PainSection />
         <Comparison />
