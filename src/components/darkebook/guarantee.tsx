@@ -12,7 +12,7 @@ export default function Guarantee() {
         <p className="text-lg text-gray-300 mb-8">
           Você tem 15 dias para decidir. Se não gostar, devolvemos 100% do valor imediatamente, sem burocracia.
         </p>
-        <Button asChild size="lg" className="bg-green-600 text-white font-bold hover:bg-green-700 transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto">
+        <Button asChild size="lg" className="bg-green-600 text-white font-bold hover:bg-green-700 transform hover:scale-105 transition-transform duration-300 w-full max-w-xs mx-auto">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <MessageCircle className="mr-2" /> Falar com suporte no WhatsApp
           </a>
