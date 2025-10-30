@@ -1,3 +1,5 @@
+import { ArrowDown } from "lucide-react";
+
 export default function PainSection() {
     return (
       <section id="dor" className="py-16 bg-charcoal-black">
@@ -12,12 +14,16 @@ export default function PainSection() {
             <p>
               O resultado? Você deixa de aproveitar as histórias mais intensas e desejadas do gênero, simplesmente porque o preço não cabe no seu bolso.
             </p>
-            <p className="font-bold text-gold">
-              Foi exatamente por isso que criamos essa coleção: os Dark Romances mais procurados, vendidos e até censurados, reunidos em um só lugar, por um valor que qualquer fã pode pagar.
-            </p>
+            <div className="flex flex-col items-center mt-8">
+              <ArrowDown className="text-gold w-10 h-10 mb-2 animate-bounce" />
+              <div className="border-2 border-gold rounded-lg p-4 bg-card/50">
+                <p className="font-bold text-gold">
+                  Foi exatamente por isso que criamos essa coleção: os Dark Romances mais procurados, vendidos e até censurados, reunidos em um só lugar, por um valor que qualquer fã pode pagar.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     );
   }
-  
