@@ -30,7 +30,7 @@ export default function DynamicSocialProof() {
         const interval = setInterval(() => {
             // Wait for fade out animation to complete before showing next one
             setTimeout(showNotification, 500);
-        }, 15000 + Math.random() * 10000); // 15-25 seconds interval
+        }, 12000 + Math.random() * 5000); // 12-17 seconds interval
 
         // Initial notification
         const initialTimeout = setTimeout(showNotification, 5000);
@@ -44,10 +44,10 @@ export default function DynamicSocialProof() {
     if (!currentNotification) return null;
 
     return (
-        <div className={`fixed bottom-4 left-4 z-50 transition-all duration-500 ${isVisible ? 'animate-notification-in' : 'animate-notification-out'}`}>
-            <div className="bg-card border border-gold rounded-lg shadow-lg p-4 flex items-center gap-3">
-                <CheckCircle className="text-gold" size={24} />
-                <p className="text-sm text-light-gray">{currentNotification}</p>
+        <div className={`fixed top-4 right-4 z-50 transition-all duration-500 ${isVisible ? 'animate-notification-in' : 'animate-notification-out'}`}>
+            <div className="bg-card border border-gold rounded-lg shadow-lg p-3 flex items-center gap-2 max-w-xs sm:max-w-sm">
+                <CheckCircle className="text-gold" size={20} />
+                <p className="text-xs text-light-gray">{currentNotification}</p>
             </div>
         </div>
     );
