@@ -1,18 +1,18 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import { Poppins, Anton } from 'next/font/google';
+import { UnifrakturCook, Cormorant_Garamond } from 'next/font/google';
 
-const poppins = Poppins({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '600', '700'],
-  variable: '--font-poppins',
+  variable: '--font-cormorant',
 });
 
-const anton = Anton({
+const unifrakturcook = UnifrakturCook({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-anton',
+  weight: ['700'],
+  variable: '--font-unifrakturcook',
 });
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${poppins.variable} ${anton.variable} font-body antialiased`}>
+      <body className={`${cormorant.variable} ${unifrakturcook.variable} font-body antialiased`}>
         {children}
         <Toaster />
       </body>

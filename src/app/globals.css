@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-cormorant), serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-anton), sans-serif;
+    font-family: var(--font-unifrakturcook), cursive;
 }
 
 @layer base {

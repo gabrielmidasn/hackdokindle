@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['var(--font-poppins)', 'sans-serif'],
-        headline: ['var(--font-anton)', 'sans-serif'],
+        body: ['var(--font-cormorant)', 'serif'],
+        headline: ['var(--font-unifrakturcook)', 'cursive'],
       },
       colors: {
         background: 'hsl(var(--background))',
