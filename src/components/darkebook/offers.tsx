@@ -19,7 +19,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
             </li>
           ))}
         </ul>
-        <Button onClick={() => !isFeatured && onEssentialClick()} size="lg" className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold`}>
+        <Button onClick={() => !isFeatured && onEssentialClick()} size="lg" className={`${isFeatured ? 'bg-gold text-charcoal-black hover:bg-gold/90' : 'bg-gray-600'} w-full font-bold transform hover:scale-105 transition-transform duration-300`}>
           {offer.cta}
         </Button>
       </div>
