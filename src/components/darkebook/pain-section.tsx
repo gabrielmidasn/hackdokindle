@@ -2,8 +2,12 @@ import { ArrowDown } from "lucide-react";
 
 export default function PainSection() {
     return (
-      <section id="dor" className="py-12 bg-charcoal-black">
-        <div className="container mx-auto px-4 text-center max-w-3xl">
+      <section id="dor" className="py-8 bg-charcoal-black relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-no-repeat bg-center opacity-5"
+          style={{backgroundImage: "url('https://i.imgur.com/b0FqFsO.png')", backgroundSize: '60%'}}
+        ></div>
+        <div className="container mx-auto px-4 text-center max-w-3xl relative z-10">
           <h2 className="text-3xl md:text-4xl font-headline text-light-gray mb-6">
             Cansada de pagar caro para ler seus Dark Romances favoritos?
           </h2>
