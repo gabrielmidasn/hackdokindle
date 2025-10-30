@@ -42,7 +42,7 @@ export default function UpsellPopup({ onClose }: { onClose: () => void }) {
 
         <div className="my-4">
             <p className="text-lg text-gray-500 line-through">De R$ 23,90</p>
-            <p className="text-3xl font-bold text-gold my-1">Por apenas R$ 15,90</p>
+            <p className="text-5xl font-extrabold text-gold my-1 tracking-tighter [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%)]">Por apenas R$ 15,90</p>
         </div>
 
         <CountdownTimer />
