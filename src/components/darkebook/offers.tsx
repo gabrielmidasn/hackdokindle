@@ -16,40 +16,32 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
         </Button>
     );
 
-    if (isFeatured) {
-        return (
-            <div className={`relative border-2 border-gold shadow-gold/30 bg-card rounded-xl p-6 text-center transform transition-transform duration-300 scale-105 shadow-2xl`}>
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-charcoal-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1"><Star size={16} />MAIS VENDIDO</div>
-                <h3 className="text-2xl font-headline text-gold mb-2 mt-5">{offer.title}</h3>
-                <p className="text-4xl font-bold mb-4">{offer.price}</p>
-                <ul className="text-left space-y-3 mb-8 text-light-gray">
-                {offer.features.map((feature: any, index: number) => (
-                    <li key={index} className="flex items-start">
-                    {feature.included ? <Check className="w-5 h-5 text-green-500 mr-3 shrink-0 mt-1" /> : <X className="w-5 h-5 text-red-500 mr-3 shrink-0 mt-1" />}
-                    <span>{feature.text}</span>
-                    </li>
-                ))}
-                </ul>
-                <a href="https://www.ggcheckout.com/checkout/v2/LLzLS6aVZ8sqN9rWaOQj" target="_blank" rel="noopener noreferrer">
-                    {buttonContent}
-                </a>
-            </div>
-        )
-    }
+    const anchorProps = isFeatured ? { href: "https://www.ggcheckout.com/checkout/v2/LLzLS6aVZ8sqN9rWaOQj", target: "_blank", rel: "noopener noreferrer" } : {};
+
+    const ButtonWrapper = isFeatured ? 'a' : 'div';
+
 
     return (
-      <div className={`relative border-2 border-gray-700 bg-card rounded-xl p-6 text-center transform transition-transform duration-300 hover:scale-105`}>
+      <div className={`relative border-2 ${isFeatured ? 'border-gold shadow-gold/30 scale-105 shadow-2xl' : 'border-gray-700 hover:scale-105'} bg-card rounded-xl p-6 text-center transform transition-transform duration-300`}>
+        {isFeatured && <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-charcoal-black px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1"><Star size={16} />MAIS VENDIDO</div>}
         <h3 className="text-2xl font-headline text-gold mb-2 mt-5">{offer.title}</h3>
+        {offer.comparisonPrice && (
+            <p className="text-md text-red-500 line-through">
+                {offer.comparisonPrice}
+            </p>
+        )}
         <p className="text-4xl font-bold mb-4">{offer.price}</p>
         <ul className="text-left space-y-3 mb-8 text-light-gray">
-          {offer.features.map((feature: any, index: number) => (
+        {offer.features.map((feature: any, index: number) => (
             <li key={index} className="flex items-start">
-              {feature.included ? <Check className="w-5 h-5 text-green-500 mr-3 shrink-0 mt-1" /> : <X className="w-5 h-5 text-red-500 mr-3 shrink-0 mt-1" />}
-              <span>{feature.text}</span>
+            {feature.included ? <Check className="w-5 h-5 text-green-500 mr-3 shrink-0 mt-1" /> : <X className="w-5 h-5 text-red-500 mr-3 shrink-0 mt-1" />}
+            <span>{feature.text}</span>
             </li>
-          ))}
+        ))}
         </ul>
-        {buttonContent}
+        <ButtonWrapper {...anchorProps}>
+            {buttonContent}
+        </ButtonWrapper>
       </div>
     );
   };
@@ -61,6 +53,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
       {
         title: "Pacote Essencial",
         price: "R$ 12,90",
+        comparisonPrice: "No Kindle: R$ 225,00",
         features: [
           { text: "15 livros", included: true },
           { text: "Grupo privado no WhatsApp", included: false },
@@ -74,6 +67,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
       {
         title: "Coleção Completa",
         price: "R$ 23,90",
+        comparisonPrice: "No Kindle: + R$ 750,00",
         features: [
           { text: "50 livros", included: true },
           { text: "Best-sellers internacionais", included: true },
