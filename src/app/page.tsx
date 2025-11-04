@@ -3,7 +3,6 @@ import BookGrid from "@/components/darkebook/book-grid";
 import PainSection from "@/components/darkebook/pain-section";
 import Comparison from "@/components/darkebook/comparison";
 import WhyDarkebook from "@/components/darkebook/why-darkebook";
-import SocialProof from "@/components/darkebook/social-proof";
 import Offers from "@/components/darkebook/offers";
 import Guarantee from "@/components/darkebook/guarantee";
 import Faq from "@/components/darkebook/faq";
@@ -23,7 +22,6 @@ export default function DarkebookPage() {
           <PainSection />
           <Comparison />
           <WhyDarkebook />
-          <SocialProof />
           <Offers />
           <Guarantee />
           <Faq />
