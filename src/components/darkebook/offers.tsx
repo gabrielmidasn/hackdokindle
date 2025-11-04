@@ -52,7 +52,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
     const offers = [
       {
         title: "Pacote Essencial",
-        price: "R$ 12,90",
+        price: "R$ 9,90",
         comparisonPrice: "No Kindle: R$ 225,00",
         features: [
           { text: "15 livros", included: true },
