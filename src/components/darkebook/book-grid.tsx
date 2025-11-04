@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const bookCovers = [
-  "https://i.imgur.com/dyuJfSF.png", "https://i.imgur.com/JTZ1DoC.png", "https://i.imgur.com/qtiY6B2.png",
-  "https://i.imgur.com/V7Pjdwn.png", "https://i.imgur.com/jZnaaoC.png", "https://i.imgur.com/3lQFgiD.png",
-  "https://i.imgur.com/1Hma2gI.png", "https://i.imgur.com/kvZLohL.png", "https://i.imgur.com/aCAWYio.png",
-  "https://i.imgur.com/y8jdHdg.png", "https://i.imgur.com/CAO909r.png", "https://i.imgur.com/IFncPf2.png"
+  "https://i.imgur.com/dyuJfSF.png", "https://i.imgur.com/JTZ1DoC.png", "https://i.imgur.com/V7Pjdwn.png",
+  "https://i.imgur.com/jZnaaoC.png", "https://i.imgur.com/aCAWYio.png", "https://i.imgur.com/y8jdHdg.png",
+  "https://i.imgur.com/CAO909r.png", "https://i.imgur.com/IFncPf2.png", "https://i.imgur.com/SGk3iWO.png",
+  "https://i.imgur.com/uflQ46U.png", "https://i.imgur.com/Hlo6yaZ.png", "https://i.imgur.com/dW69vBf.png"
 ];
 
 export default function BookGrid() {
