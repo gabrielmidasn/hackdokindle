@@ -27,6 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        {/* Meta de verificação do domínio do Facebook */}
+        <meta
+          name="facebook-domain-verification"
+          content="0pyc6rr1ncwsry83hewcmwhjwcy1mx"
+        />
+      </head>
       <body className={`${faunaOne.variable} ${cinzel.variable} font-body antialiased`}>
         {children}
         <Toaster />
@@ -34,3 +41,4 @@ export default function RootLayout({
     </html>
   );
 }
+
