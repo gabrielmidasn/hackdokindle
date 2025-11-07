@@ -69,7 +69,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
         price: "R$ 23,90",
         comparisonPrice: "No Kindle: + R$ 750,00",
         features: [
-          { text: "50 livros", included: true },
+          { text: "600 LIVROS MAIS ATUALIZAÇÕES SEMANAIS", included: true },
           { text: "Best-sellers internacionais", included: true },
           { text: "Best-sellers nacionais", included: true },
           { text: "Grupo privado no WhatsApp", included: true },
