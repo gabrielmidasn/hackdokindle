@@ -33,16 +33,20 @@ export default function RootLayout({
         name="facebook-domain-verification"
         content="0pyc6rr1ncwsry83hewcmwhjwcy1mx"
       />
-{/* Script do UTMify */}
+{/* Script do UTMify (Pixel + CAPI) */}
 <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-xcod-sck
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
+  dangerouslySetInnerHTML={{
+    __html: `
+      window.pixelId = "690f93de76e51dace148e305";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    `,
+  }}
+/>
 
-     
     </head>
 
     <body className={`${faunaOne.variable} ${cinzel.variable} font-body antialiased`}>
