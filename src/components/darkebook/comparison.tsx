@@ -10,7 +10,7 @@ export default function Comparison() {
           KINDLE X DARKEBOOK
         </h2>
         <div className="relative w-full max-w-2xl mb-8">
-          <Image src="https://imgur.com/sEBFCL1.png" alt="Comparação Kindle vs Darkebook" width={800} height={450} className="rounded-lg shadow-2xl" />
+          <Image src="https://imgur.com/qP7z13m.png" alt="Comparação Kindle vs Darkebook" width={800} height={450} className="rounded-lg shadow-2xl" />
         </div>
         <p className="text-xl md:text-2xl text-light-gray max-w-2xl mx-auto mb-4">
           No Kindle, cada título custa caro. No Darkebook, você leva <span className="text-gold font-bold">todos os mais procurados e vendidos</span> por um valor único e acessível.
