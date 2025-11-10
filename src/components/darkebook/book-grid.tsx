@@ -1,11 +1,18 @@
 import Image from "next/image";
 
 const bookCovers = [
-  "https://i.imgur.com/dyuJfSF.png", "https://i.imgur.com/JTZ1DoC.png", "https://i.imgur.com/V7Pjdwn.png",
-  "https://i.imgur.com/jZnaaoC.png", "https://i.imgur.com/aCAWYio.png", "https://i.imgur.com/y8jdHdg.png",
-  "https://i.imgur.com/CAO909r.png", "https://i.imgur.com/IFncPf2.png", "https://i.imgur.com/SGk3iWO.png",
-  "https://i.imgur.com/uflQ46U.png", "https://i.imgur.com/Hlo6yaZ.png", "https://i.imgur.com/dW69vBf.png",
-  "https://i.imgur.com/7vhl9XR.png", "https://i.imgur.com/iZnnWIl.png", "https://i.imgur.com/9m02VLD.png"
+  "https://i.imgur.com/JTZ1DoC.png",
+  "https://i.imgur.com/jZnaaoC.png",
+  "https://i.imgur.com/aCAWYio.png",
+  "https://i.imgur.com/y8jdHdg.png",
+  "https://i.imgur.com/SGk3iWO.png",
+  "https://i.imgur.com/Hlo6yaZ.png",
+  "https://i.imgur.com/dW69vBf.png",
+  "https://i.imgur.com/Ar6wFY9.png",
+  "https://i.imgur.com/7vhl9XR.png",
+  "https://i.imgur.com/iZnnWIl.png",
+  "https://i.imgur.com/9m02VLD.png",
+  "https://i.imgur.com/sEBFCL1.png"
 ];
 
 export default function BookGrid() {
@@ -21,7 +28,7 @@ export default function BookGrid() {
         <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-6">
           Sem censura. Hot. Intensos. Alguns foram banidos no Brasil e agora estão todos aqui.
         </p>
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-5 gap-2 md:gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-4 gap-2 md:gap-3">
           {bookCovers.map((src, index) => (
             <div key={index} className="aspect-[3/4] relative rounded-md overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
               <Image src={src} alt={`Capa de livro ${index + 1}`} layout="fill" objectFit="cover" />
