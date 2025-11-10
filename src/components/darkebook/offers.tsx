@@ -55,7 +55,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
         price: "R$ 9,90",
         comparisonPrice: "No Kindle: R$ 225,00",
         features: [
-          { text: "DRIVE COM 300 DARK ROMANCES", included: true },
+          { text: "DRIVE COM 120 DARK ROMANCES", included: true },
           { text: "Grupo privado no WhatsApp", included: false },
           { text: "Acesso vitalício", included: false },
           { text: "Contos eróticos diários", included: false },
