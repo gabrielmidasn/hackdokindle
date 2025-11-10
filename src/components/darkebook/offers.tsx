@@ -56,7 +56,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
         comparisonPrice: "No Kindle: R$ 225,00",
         features: [
           { text: "DRIVE COM 120 DARK ROMANCES", included: true },
-          { text: "Grupo privado no WhatsApp", included: false },
+          { text: "GRUPO PRIVADO NO WHATSAPP E TELEGRAM", included: false },
           { text: "Acesso vitalício", included: false },
           { text: "Contos eróticos diários", included: false },
           { text: "Atualizações semanais", included: false },
@@ -72,7 +72,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
           { text: "600 LIVROS MAIS ATUALIZAÇÕES SEMANAIS", included: true },
           { text: "Best-sellers internacionais", included: true },
           { text: "Best-sellers nacionais", included: true },
-          { text: "Grupo privado no WhatsApp", included: true },
+          { text: "GRUPO PRIVADO NO WHATSAPP E TELEGRAM", included: true },
           { text: "Acesso vitalício", included: true },
           { text: "Contos eróticos diários", included: true },
           { text: "Atualizações semanais", included: true },
