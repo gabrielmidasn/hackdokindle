@@ -16,7 +16,7 @@ const OfferCard = ({ offer, isFeatured, onEssentialClick }: any) => {
         </Button>
     );
 
-    const anchorProps = isFeatured ? { href: "https://www.ggcheckout.com/checkout/v2/LLzLS6aVZ8sqN9rWaOQj", target: "_blank", rel: "noopener noreferrer" } : {};
+    const anchorProps = isFeatured ? { href: "https://www.ggcheckout.com/checkout/v2/QvsQnHHPIwJlI5Bzmxwx", target: "_blank", rel: "noopener noreferrer" } : {};
 
     const ButtonWrapper = isFeatured ? 'a' : 'div';
 
